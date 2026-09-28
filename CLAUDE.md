@@ -17,6 +17,10 @@ de format de fichier avec leur signature, et un tableau « en cas de ».
 **À lire avant la première séance KiCad**, ça évite de redécouvrir seul ce qui a
 déjà coûté du temps ici.
 
+`doc/publier-un-projet.md` — mémo de poste à poste : clés SSH (une par poste,
+jamais de copie), prompt de migration vers GitHub, et ce qui bloque une
+publication — documents constructeur, secrets, licences du code tiers.
+
 ## Règles
 - Committer avant toute modification (git).
 - PCB: passer par kipy sur l'instance ouverte. Ne jamais éditer
