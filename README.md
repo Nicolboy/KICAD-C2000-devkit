@@ -148,12 +148,19 @@ la zone analogique. Même schéma, même brochage, seul le PCB change.
 
 Travail en cours, et le dire plutôt que de le masquer :
 
-- **Schémas** — connecteurs posés, alimentations câblées avec `PWR_FLAG` par
+- **Devkit B (F28P551)** — **PCB placé et routé** (24 empreintes, DRC à 0
+  violation). Les deux connecteurs 2 × 28 portent désormais une sérigraphie
+  par broche — canal ADC réel, GPIO, rôle de bus générique (`I2C_CK`/`DT`,
+  `SPI_CK`/`DO`/`DI`/`CS`...) et alimentations, plutôt que les noms
+  spécialisés du schéma (`Vin`, `I_SHUNT1_CMP`...), pour que le connecteur se
+  lise seul. L'ERC du schéma reste à 41 violations, de la même famille que
+  les autres projets (pins de réserve non pilotées).
+- **Devkit A (F280037)** — PCB **peuplé** (27 empreintes posées depuis le
+  schéma) mais pas encore routé : 106 pastilles non connectées au DRC.
+- **Shield** — connecteurs posés, alimentations câblées avec `PWR_FLAG` par
   net. Le routage des signaux n'est pas fait : il demande des choix de
-  conception qui n'ont pas leur place dans un générateur. D'où les
-  `pin_not_connected` encore présents à l'ERC.
-- **PCB** — non routés. Le DRC passe à 0 sur les trois projets, ce qui ne prouve
-  rien tant qu'il n'y a pas de piste.
+  conception qui n'ont pas leur place dans un générateur. D'où les 108
+  violations d'ERC (`pin_not_connected` attendus). PCB non routé.
 - **Carte de puissance** — spécifiée dans `doc/`, pas encore dessinée.
 
 Les points laissés ouverts — caractéristiques de sortie des AMC, courant
