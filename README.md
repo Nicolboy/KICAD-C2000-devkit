@@ -7,6 +7,10 @@ Le brochage est décrit en Markdown, les symboles et les projets KiCad en sont
 Cible : une commande numérique de convertisseur de puissance isolé, pilotée par
 un C2000 et supervisée par un ESP32-C6 pour le Wi-Fi et la mise à jour FOTA.
 
+<p align="center">
+  <img src="doc/devkit_B_F28P551.png" alt="Rendu 3D de la carte Devkit TMS320F28P551-LQFP64" width="700px">
+</p>
+
 ---
 
 ## Architecture — quatre cartes, une barrière
