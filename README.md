@@ -1,4 +1,4 @@
-# KICAD-C2000-shield
+# KICAD-C2000-devkit
 
 Shield d'isolation et cartes devkit pour TMS320 C2000, conçus sous KiCad 10.
 Le brochage est décrit en Markdown, les symboles et les projets KiCad en sont

@@ -1,11 +1,16 @@
 # Projet PCB — KiCad 10, Windows
 
+**Lire `../KICAD.md` d'abord** (conventions communes à tous les projets
+KiCad de l'atelier : câblage labels-only, pièges d'axe Y et de cache de
+symbole, réglages de projet par défaut) — ce fichier-ci ne couvre que ce
+qui est spécifique à ce dépôt.
+
 ## Environnement
 - KiCad 10 doit être OUVERT avec le projet chargé. L'API IPC ne marche
   pas en headless sur cette version.
 - venv: .venv\Scripts\python.exe — kicad-python (kipy) installé.
 - kicad-cli est dans le PATH.
-- Dépôt : https://github.com/Nicolboy/KICAD-C2000-shield, branche `main`.
+- Dépôt : https://github.com/Nicolboy/KICAD-C2000-devkit, branche `main`.
   Clé SSH de compte `~/.ssh/github_nicolboy`, sélectionnée par `~/.ssh/config`.
   Ne jamais remettre de `core.sshCommand` dans le dépôt : ça contourne cette
   configuration et fait échouer le push avec « denied to deploy key ».
