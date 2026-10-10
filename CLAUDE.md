@@ -1,19 +1,14 @@
 # Projet PCB — KiCad 10, Windows
 
-**Lire `../KICAD.md` d'abord** (conventions communes à tous les projets
-KiCad de l'atelier : câblage labels-only, pièges d'axe Y et de cache de
-symbole, réglages de projet par défaut) — ce fichier-ci ne couvre que ce
+**Lire `../KICAD.md` d'abord** (édition manuelle, câblage labels-only,
+pièges d'axe Y et de cache de symbole, réglages de projet, commit avant
+modification, vérification kicad-cli) — ce fichier-ci ne couvre que ce
 qui est spécifique à ce dépôt.
 
 ## Environnement
-- KiCad 10 doit être OUVERT avec le projet chargé. L'API IPC ne marche
-  pas en headless sur cette version.
-- venv: .venv\Scripts\python.exe — kicad-python (kipy) installé.
-- kicad-cli est dans le PATH.
+- venv: `.venv\Scripts\python.exe` — `kicad-python` (kipy) installé.
 - Dépôt : https://github.com/Nicolboy/KICAD-C2000-devkit, branche `main`.
-  Clé SSH de compte `~/.ssh/github_nicolboy`, sélectionnée par `~/.ssh/config`.
-  Ne jamais remettre de `core.sshCommand` dans le dépôt : ça contourne cette
-  configuration et fait échouer le push avec « denied to deploy key ».
+  Clés SSH et procédure de publication : `doc/publier-un-projet.md`.
 
 ## Méthode de travail
 
@@ -21,19 +16,6 @@ qui est spécifique à ce dépôt.
 de format de fichier avec leur signature, et un tableau « en cas de ».
 **À lire avant la première séance KiCad**, ça évite de redécouvrir seul ce qui a
 déjà coûté du temps ici.
-
-`doc/publier-un-projet.md` — mémo de poste à poste : clés SSH (une par poste,
-jamais de copie), prompt de migration vers GitHub, et ce qui bloque une
-publication — documents constructeur, secrets, licences du code tiers.
-
-## Règles
-- Committer avant toute modification (git).
-- PCB: passer par kipy sur l'instance ouverte. Ne jamais éditer
-  le .kicad_pcb à la main pendant que KiCad est ouvert.
-- Schéma: éditer les .kicad_sch directement, KiCad FERMÉ, puis relancer.
-- Exports et vérifs: kicad-cli uniquement (pas d'export via l'API en v10).
-- Après chaque lot de modifs: kicad-cli pcb drc / kicad-cli sch erc,
-  et me rapporter les erreurs sans les corriger d'office.
 
 ## Contraintes fab
 
@@ -101,12 +83,8 @@ générateur. `gen_shield.py` a été retiré pour cette raison : il écrasait
 
 ## Vérification avant tout commit
 
-Sur les trois projets : `shield`, `devkit_A_F280037`, `devkit_B_F28P551`.
-
-```
-kicad-cli sch erc --exit-code-violations <projet>.kicad_sch
-kicad-cli pcb drc --exit-code-violations <projet>.kicad_pcb
-```
+Sur les trois projets : `shield`, `devkit_A_F280037`, `devkit_B_F28P551`
+(commande dans `KICAD.md`).
 
 ## Décisions de conception et points ouverts
 
