@@ -5,6 +5,7 @@ schéma, `DEVKIT_C2000_A` pour le F280037CSPM et `DEVKIT_C2000_B` pour le
 F28P551SG5PM. Connecteur 2 × 28, entraxe 25,4 mm.
 
 Les 64 broches sont attribuées et vérifiées sur les deux variantes.
+**Depuis la décision #13, la rangée A diverge entre les deux** — voir §2.1.
 
 ---
 
@@ -64,6 +65,58 @@ Les 64 broches sont attribuées et vérifiées sur les deux variantes.
 Dix masses pour dix-huit signaux. **Chaque ligne de shunt est encadrée de masses
 des deux côtés.** A1 rejoint VSSA (broche 21). VREF_ADC et VREFLO_SENSE forment
 une paire de référence en fin de rangée.
+
+### 2.1 Rangée A — `devkit_B_F28P551` seul (divergente, décision #13)
+
+**Depuis la décision #13, cette rangée n'est plus celle ci-dessus que sur
+`devkit_A_F280037`.** Sur `devkit_B_F28P551`, elle a été reroutée pour sortir
+les 4 commandes du bloc CLB utilisé comme mini-CPLD côté shield (miroir de la
+décision #20 du dépôt `KICAD-C2000-powershield`). Le CLB est une ressource
+propre au F28P551 — `devkit_A_F280037` garde la rangée A d'origine, inchangée,
+ci-dessus.
+
+| Pos | Signal | Broche | Canaux ADC / note |
+|---|---|---|---|
+| A1 | GND | 21 (VSSA) | — |
+| A2 | Vin | 6 | A6 |
+| A3 | Vout | 7 | B2/C6 |
+| A4 | Iin | 12 | A11/B10/C0 |
+| A5 | Iout | 14 | A1/B7 |
+| A6 | GND | — | — |
+| A7 | V1 | 8 | A3/B3/C5 |
+| A8 | Temp1 | 10 | A15/B9/C7 |
+| A9 | Temp2 | 11 | A14/B14/C4 |
+| A10 | ADC_8 | 15 | A0/B15/C15 |
+| A11 | GND | — | — |
+| A12 | ADC_9 | 18 | A12/C1 |
+| A13 | ADC_10 | 19 | A7/C3 |
+| A14 | ADC_11 | 20 | A8/B0/C11 |
+| A15 | ADC_12 | 23 | A4/B8/C14 |
+| A16 | GND | — | — |
+| A17 | I_SHUNT1_CMP | 9 | A2/B6/C9 - CMP1_HP0 |
+| A18 | I_SHUNT1_MES | 13 | A5/B12/C2 |
+| A19 | GND | — | — |
+| A20 | I_SHUNT2_CMP | 25 | A10/B1/C10 - CMP2_HP3 |
+| A21 | I_SHUNT2_MES | 24 | A9/B4/C8 |
+| A22 | GND | — | — |
+| A23 | Stage1_EN | 62 | GPIO9, sortie logicielle — OUTPUTXBAR6 disponible en silicium mais non utilisé ; broche libérée par la décision #11 |
+| A24 | Stage2_EN | 27 | GPIO20, sortie logicielle — alt. ADC A17/B17/C17 ; ancien emplacement LED abandonné (§5) |
+| A25 | HV_EN | 28 | GPIO21, sortie logicielle — alt. ADC A18/B18/C18 ; ancien emplacement LED abandonné (§5) |
+| A26 | Discharge | 55 | GPIO41, sortie logicielle — broche libérée par la décision #11 |
+| A27 | VREF_ADC | 16 | VREFHI |
+| A28 | VREFLO_SENSE | 17 | VREFLO |
+
+**Six masses pour vingt-deux signaux** (contre dix masses pour dix-huit sur
+`devkit_A_F280037`). `Vin`/`Vout` et `Iin`/`Iout` se retrouvent groupés par
+paire plutôt qu'alternés avec une masse — plus aucune masse ne les sépare.
+C'est le point de départ de la discussion sur un nouveau connecteur,
+consignée à part dans [`connecteur-v2-plan.md`](connecteur-v2-plan.md)
+(proposition non construite).
+
+**Renommage `devkit_B_F28P551` uniquement, logique négative (décision #13,
+miroir de la #20 côté shield) :** `nRESET`→`~{RESET}` en B3,
+`GPIO_1`→`~{FAULT_MCU}` en B28 — cosmétique sur le nom de label, le net reste
+le même. `devkit_A_F280037` garde `nRESET`/`GPIO_1`.
 
 ### Rangée B — numérique, 1 × 28
 

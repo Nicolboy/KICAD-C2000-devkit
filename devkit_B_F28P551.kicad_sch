@@ -132,10 +132,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 27.94 0)
 					(length 5.08)
-					(name "GND"
+					(name "Iin"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -153,7 +153,7 @@
 				(pin passive line
 					(at -22.86 25.4 0)
 					(length 5.08)
-					(name "V1"
+					(name "Iout"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -168,10 +168,10 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -22.86 22.86 0)
 					(length 5.08)
-					(name "Temp1"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -186,10 +186,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 20.32 0)
 					(length 5.08)
-					(name "GND"
+					(name "V1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -207,7 +207,7 @@
 				(pin passive line
 					(at -22.86 17.78 0)
 					(length 5.08)
-					(name "Temp2"
+					(name "Temp1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -225,7 +225,7 @@
 				(pin passive line
 					(at -22.86 15.24 0)
 					(length 5.08)
-					(name "Iin"
+					(name "Temp2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -240,10 +240,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 12.7 0)
 					(length 5.08)
-					(name "GND"
+					(name "ADC_8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -258,10 +258,10 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -22.86 10.16 0)
 					(length 5.08)
-					(name "Iout"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -279,7 +279,7 @@
 				(pin passive line
 					(at -22.86 7.62 0)
 					(length 5.08)
-					(name "ADC_8"
+					(name "ADC_9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -294,10 +294,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 5.08 0)
 					(length 5.08)
-					(name "GND"
+					(name "ADC_10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -315,7 +315,7 @@
 				(pin passive line
 					(at -22.86 2.54 0)
 					(length 5.08)
-					(name "ADC_9"
+					(name "ADC_11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -333,7 +333,7 @@
 				(pin passive line
 					(at -22.86 0 0)
 					(length 5.08)
-					(name "ADC_10"
+					(name "ADC_12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -369,7 +369,7 @@
 				(pin passive line
 					(at -22.86 -5.08 0)
 					(length 5.08)
-					(name "ADC_11"
+					(name "I_SHUNT1_CMP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -387,7 +387,7 @@
 				(pin passive line
 					(at -22.86 -7.62 0)
 					(length 5.08)
-					(name "ADC_12"
+					(name "I_SHUNT1_MES"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -423,7 +423,7 @@
 				(pin passive line
 					(at -22.86 -12.7 0)
 					(length 5.08)
-					(name "I_SHUNT1_MES"
+					(name "I_SHUNT2_CMP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -438,10 +438,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 -15.24 0)
 					(length 5.08)
-					(name "GND"
+					(name "I_SHUNT2_MES"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -456,10 +456,10 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -22.86 -17.78 0)
 					(length 5.08)
-					(name "I_SHUNT1_CMP"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -474,10 +474,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 -20.32 0)
 					(length 5.08)
-					(name "GND"
+					(name "Stage1_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -495,7 +495,7 @@
 				(pin passive line
 					(at -22.86 -22.86 0)
 					(length 5.08)
-					(name "I_SHUNT2_MES"
+					(name "Stage2_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -510,10 +510,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -22.86 -25.4 0)
 					(length 5.08)
-					(name "GND"
+					(name "HV_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -531,7 +531,7 @@
 				(pin passive line
 					(at -22.86 -27.94 0)
 					(length 5.08)
-					(name "I_SHUNT2_CMP"
+					(name "Discharge"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -697,7 +697,7 @@
 				(pin passive line
 					(at -22.86 30.48 0)
 					(length 5.08)
-					(name "~{nRESET}"
+					(name "~{RESET}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1147,7 +1147,7 @@
 				(pin bidirectional line
 					(at -22.86 -33.02 0)
 					(length 5.08)
-					(name "GPIO_1"
+					(name "~{FAULT_MCU}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1709,7 +1709,7 @@
 				(pin input line
 					(at 6.35 -45.72 90)
 					(length 5.08)
-					(name "A17/B17/C17/LED_B"
+					(name "A17/B17/C17/Stage2_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1727,7 +1727,7 @@
 				(pin input line
 					(at 8.89 -45.72 90)
 					(length 5.08)
-					(name "A18/B18/C18/LED_R"
+					(name "A18/B18/C18/HV_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1799,7 +1799,7 @@
 				(pin input line
 					(at 19.05 -45.72 90)
 					(length 5.08)
-					(name "B24/D1/E1/GPIO_1"
+					(name "B24/D1/E1/~{FAULT_MCU}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2213,7 +2213,7 @@
 				(pin bidirectional line
 					(at 3.81 45.72 270)
 					(length 5.08)
-					(name "GPIO41/GPIO_3"
+					(name "GPIO41/Discharge"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2339,7 +2339,7 @@
 				(pin bidirectional line
 					(at -13.97 45.72 270)
 					(length 5.08)
-					(name "GPIO9/CMP_OUT2"
+					(name "GPIO9/Stage1_EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3733,7 +3733,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 449.834 71.628 180)
+		(at 449.834 66.548 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3742,7 +3742,7 @@
 		)
 		(uuid "0a15d196-fc12-435e-b8e2-0bb1d906f7dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 71.628 0)
+			(at 449.834 66.548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3863,28 +3863,6 @@
 			)
 		)
 	)
-	(global_label "TP_PIN28"
-		(shape bidirectional)
-		(at 266.446 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0fb05ae1-39a8-3d90-03ff-0b2ecd7cbdcb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 266.446 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "VDD_CORE"
 		(shape bidirectional)
 		(at 303.276 173.99 0)
@@ -3963,28 +3941,6 @@
 		(uuid "162c6281-6451-416a-af02-d97b764a9e65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 251.46 263.398 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 449.834 79.248 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1723e0f4-874b-4a24-8073-903328413c46")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 79.248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,6 +4303,28 @@
 			)
 		)
 	)
+	(global_label "Stage1_EN"
+		(shape bidirectional)
+		(at 243.586 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2eefe30c-6f63-4cae-9b58-2b877f37e26f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.586 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 276.098 338.328 270)
@@ -4359,6 +4337,28 @@
 		(uuid "2ffff2a0-81e8-4468-a1fc-37f9e753ab6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 276.098 338.328 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "Discharge"
+		(shape bidirectional)
+		(at 261.366 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "310b2e0f-3dae-407a-85ae-a67fa59b2ffa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.366 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4435,28 +4435,6 @@
 			)
 		)
 	)
-	(global_label "TP_PIN55"
-		(shape bidirectional)
-		(at 261.366 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3be0dadd-6e49-640f-4b6e-6ca23210b8f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.366 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 302.26 339.344 270)
@@ -4503,7 +4481,7 @@
 	)
 	(global_label "Temp1"
 		(shape bidirectional)
-		(at 449.834 53.848 180)
+		(at 449.834 58.928 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4512,7 +4490,7 @@
 		)
 		(uuid "44aa130a-1202-9e16-7f5e-d86da7b53be6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 53.848 0)
+			(at 449.834 58.928 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +4613,7 @@
 	)
 	(global_label "V1"
 		(shape bidirectional)
-		(at 449.834 51.308 180)
+		(at 449.834 56.388 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4644,7 +4622,7 @@
 		)
 		(uuid "4a016850-1e8f-65ec-9464-3e8ea49b0363")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 51.308 0)
+			(at 449.834 56.388 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4789,7 +4767,7 @@
 	)
 	(global_label "Iin"
 		(shape bidirectional)
-		(at 449.834 61.468 180)
+		(at 449.834 48.768 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4798,7 +4776,7 @@
 		)
 		(uuid "58cb1b0b-1be4-3cca-93d9-999fa2b9d0b3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 61.468 0)
+			(at 449.834 48.768 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4877,7 +4855,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 449.834 102.108 180)
+		(at 449.834 86.868 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4886,7 +4864,7 @@
 		)
 		(uuid "5b38ce58-2344-abb9-3219-75f6d6aa1752")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 102.108 0)
+			(at 449.834 86.868 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4997,28 +4975,6 @@
 		(uuid "6715643f-232c-4014-9db0-ddc0e839522f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 359.664 176.784 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 449.834 97.028 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "67c83176-2bcc-4186-9a4d-f9f14412cc8e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 97.028 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5185,7 +5141,7 @@
 	)
 	(global_label "ADC_11"
 		(shape bidirectional)
-		(at 449.834 81.788 180)
+		(at 449.834 74.168 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5194,7 +5150,7 @@
 		)
 		(uuid "72d8b45f-7a8c-2bfd-21ac-2a5235c420f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 81.788 0)
+			(at 449.834 74.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5273,7 +5229,7 @@
 	)
 	(global_label "I_SHUNT1_MES"
 		(shape bidirectional)
-		(at 449.834 89.408 180)
+		(at 449.834 84.328 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5282,7 +5238,7 @@
 		)
 		(uuid "76c5181b-1c80-bc07-2f85-8b149296e45a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 89.408 0)
+			(at 449.834 84.328 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5305,28 +5261,6 @@
 		(uuid "786f5ac8-eb53-4542-a776-f80e15bbba51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 268.478 96.266 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 449.834 86.868 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78a4512c-9757-455e-8ea4-f1828eac474c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 86.868 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5535,7 +5469,29 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "Stage1_EN"
+		(shape bidirectional)
+		(at 449.834 97.028 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d3d5d34-1ddd-418a-86a2-17cdc67880ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 449.834 97.028 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 211.836 168.91 180)
 		(effects
@@ -5557,7 +5513,7 @@
 			)
 		)
 	)
-	(global_label "GPIO_1"
+	(global_label "~{FAULT_MCU}"
 		(shape bidirectional)
 		(at 276.606 228.6 270)
 		(effects
@@ -5601,7 +5557,7 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 449.834 146.558 180)
 		(effects
@@ -5735,7 +5691,7 @@
 	)
 	(global_label "I_SHUNT1_CMP"
 		(shape bidirectional)
-		(at 449.834 94.488 180)
+		(at 449.834 81.788 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5744,7 +5700,7 @@
 		)
 		(uuid "8b4d0861-6d9b-6ed3-ddfe-03ece3f62eaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 94.488 0)
+			(at 449.834 81.788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5799,7 +5755,7 @@
 			)
 		)
 	)
-	(global_label "GPIO_1"
+	(global_label "~{FAULT_MCU}"
 		(shape bidirectional)
 		(at 449.834 210.058 180)
 		(effects
@@ -5823,7 +5779,7 @@
 	)
 	(global_label "ADC_10"
 		(shape bidirectional)
-		(at 449.834 76.708 180)
+		(at 449.834 71.628 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5832,7 +5788,7 @@
 		)
 		(uuid "915a53d4-3f2f-26e6-0da2-774497c43067")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 76.708 0)
+			(at 449.834 71.628 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5845,7 +5801,7 @@
 	)
 	(global_label "Temp2"
 		(shape bidirectional)
-		(at 449.834 58.928 180)
+		(at 449.834 61.468 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5854,7 +5810,29 @@
 		)
 		(uuid "91758037-58fd-6ed3-6d05-0c17321e8d4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 58.928 0)
+			(at 449.834 61.468 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "HV_EN"
+		(shape bidirectional)
+		(at 449.834 102.108 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93689674-3669-4c33-8700-6674387f5516")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 449.834 102.108 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5909,7 +5887,7 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 155.194 276.098 90)
 		(effects
@@ -6063,7 +6041,7 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 140.462 263.652 180)
 		(effects
@@ -6153,7 +6131,7 @@
 	)
 	(global_label "I_SHUNT2_MES"
 		(shape bidirectional)
-		(at 449.834 99.568 180)
+		(at 449.834 91.948 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6162,7 +6140,7 @@
 		)
 		(uuid "a83800a5-b57f-88a6-dc50-c5d2116a5f89")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 99.568 0)
+			(at 449.834 91.948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +6219,7 @@
 	)
 	(global_label "ADC_8"
 		(shape bidirectional)
-		(at 449.834 69.088 180)
+		(at 449.834 64.008 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6250,7 +6228,7 @@
 		)
 		(uuid "acd4e6e7-c5b1-d266-3431-6b1e502523de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 69.088 0)
+			(at 449.834 64.008 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6327,7 +6305,29 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "Discharge"
+		(shape bidirectional)
+		(at 449.834 104.648 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b333531b-448a-468b-9e92-0da6f160732f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 449.834 104.648 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 473.456 266.7 0)
 		(effects
@@ -6503,6 +6503,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 449.834 94.488 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1c831aa-930b-4f91-abb9-34d80a30f1fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 449.834 94.488 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "VREFLO_SENSE"
 		(shape bidirectional)
 		(at 238.506 228.6 270)
@@ -6547,7 +6569,7 @@
 			)
 		)
 	)
-	(global_label "~{nRESET}"
+	(global_label "~{RESET}"
 		(shape bidirectional)
 		(at 155.194 251.206 270)
 		(effects
@@ -6571,7 +6593,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 449.834 91.948 180)
+		(at 449.834 79.248 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6580,7 +6602,7 @@
 		)
 		(uuid "c54336fb-7e55-49a2-9863-5b4a3d660184")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 91.948 0)
+			(at 449.834 79.248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6703,7 +6725,7 @@
 	)
 	(global_label "Iout"
 		(shape bidirectional)
-		(at 449.834 66.548 180)
+		(at 449.834 51.308 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6712,7 +6734,29 @@
 		)
 		(uuid "d17c57de-673b-211b-dc54-3dd6bf29f319")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 66.548 0)
+			(at 449.834 51.308 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "HV_EN"
+		(shape bidirectional)
+		(at 266.446 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d19d5c49-a2cf-4bd9-a7e1-d2ec2c512805")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.446 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6725,7 +6769,7 @@
 	)
 	(global_label "ADC_12"
 		(shape bidirectional)
-		(at 449.834 84.328 180)
+		(at 449.834 76.708 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6734,7 +6778,7 @@
 		)
 		(uuid "d2a97df5-3c7a-6632-617d-dccba141afcf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 84.328 0)
+			(at 449.834 76.708 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6779,6 +6823,28 @@
 		(uuid "d5de0374-3d89-b32e-d65c-02ad9d8dcce2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 211.836 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "Stage2_EN"
+		(shape bidirectional)
+		(at 263.906 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5df2681-b162-4d40-b103-00549be1fbde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 263.906 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6857,7 +6923,7 @@
 	)
 	(global_label "ADC_9"
 		(shape bidirectional)
-		(at 449.834 74.168 180)
+		(at 449.834 69.088 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6866,7 +6932,7 @@
 		)
 		(uuid "ddaf251d-08ef-ccf5-4c59-16222d9ed6fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 74.168 0)
+			(at 449.834 69.088 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6921,9 +6987,31 @@
 			)
 		)
 	)
+	(global_label "Stage2_EN"
+		(shape bidirectional)
+		(at 449.834 99.568 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "decfc8a3-45bb-47e2-a01b-7bbb3ddabd2f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 449.834 99.568 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "I_SHUNT2_CMP"
 		(shape bidirectional)
-		(at 449.834 104.648 180)
+		(at 449.834 89.408 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6932,7 +7020,7 @@
 		)
 		(uuid "df88bcdf-ddb8-7f58-61da-9a4f68983458")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 104.648 0)
+			(at 449.834 89.408 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6977,28 +7065,6 @@
 		(uuid "e1f4ed9a-7b37-c5bf-bed4-94293f3c92c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 303.276 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 449.834 64.008 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e54174ce-22b8-42c5-b769-8e73799713eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 64.008 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7077,7 +7143,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 449.834 56.388 180)
+		(at 449.834 53.848 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7086,7 +7152,7 @@
 		)
 		(uuid "ec6d5de4-43e7-45cf-b096-28a44a442323")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 56.388 0)
+			(at 449.834 53.848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7317,50 +7383,6 @@
 			)
 		)
 	)
-	(global_label "TP_PIN62"
-		(shape bidirectional)
-		(at 243.586 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f9a89c2d-0e51-81fc-98ec-61e6ed347882")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.586 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "TP_PIN27"
-		(shape bidirectional)
-		(at 263.906 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fc0ebaed-c903-d7da-d2cc-b362fc2b2b76")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 263.906 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 303.276 168.91 0)
@@ -7395,28 +7417,6 @@
 		(uuid "fe42ad8f-750f-4607-9ab3-50d879f4d439")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 250.952 102.108 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 449.834 48.768 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fe5f29ed-8ae3-4b2f-b1ec-b2d3a40248f6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 449.834 48.768 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

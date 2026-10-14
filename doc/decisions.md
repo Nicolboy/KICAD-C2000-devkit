@@ -269,6 +269,48 @@ serait payer un fabricant pour des pistes de 1 mm.
 
 ---
 
+## 13. Bloc CLB du F28P551 reporté sur `devkit_B_F28P551` : rangée A reroutée, connecteur désormais divergent entre les deux devkits
+
+**Décision.** `devkit_B_F28P551` (carte figée, production-ready — modifiée
+malgré la règle habituelle, décision explicite de l'utilisateur) voit sa
+rangée A reroutée pour sortir les 4 sorties du bloc CLB utilisé comme
+mini-CPLD côté shield (miroir de la décision #20 du dépôt
+`KICAD-C2000-powershield`) : `Stage1_EN` (broche 62, GPIO9, A23),
+`Stage2_EN` (broche 27, GPIO20, A24), `HV_EN` (broche 28, GPIO21, A25),
+`Discharge` (broche 55, GPIO41, A26). Rangée B : `nRESET`→`~{RESET}` (B3),
+`GPIO_1`→`~{FAULT_MCU}` (B28), logique négative, cosmétique sur le nom de
+label — le net reste le même.
+
+**Pourquoi.** Les broches 27/28 (GPIO20/GPIO21) sont libres depuis l'abandon
+de l'ancien emplacement LED (§5) ; les broches 55/62 (GPIO41/GPIO9) sont les
+pastilles de test libérées par la décision #11. Aucune des quatre n'était
+câblée au connecteur — les sortir ne coûte que les masses qu'elles
+remplacent, pas de broche MCU neuve à trouver.
+
+**Ce qui casse.** `devkit_A_F280037` n'a **pas** été modifié — le CLB est une
+ressource propre au F28P551, absente du F280037. **Le connecteur n'est plus
+identique entre les deux devkits**, ce que la décision #1 posait comme
+invariant (« toute divergence hors de cette liste est une erreur »). Un
+shield branché sur `devkit_A_F280037` n'a plus accès à `Stage1_EN`/
+`Stage2_EN`/`HV_EN`/`Discharge` — limitation acceptée tant qu'aucune carte
+fille n'exige le CLB sur F280037. Si ce besoin apparaît, relire cette
+décision avant d'ajouter une 5e divergence par habitude.
+
+La rangée A passe de dix masses pour dix-huit signaux à **six masses pour
+vingt-deux** : `Vin`/`Vout` et `Iin`/`Iout` se retrouvent groupés par paire
+au lieu d'alterner avec une masse — plus aucune masse ne les sépare. C'est
+le point de départ de la discussion sur un nouveau connecteur, consignée à
+part dans [`connecteur-v2-plan.md`](connecteur-v2-plan.md) : **proposition
+non construite**, aucune régression sur le PCB déjà routé décrit ici.
+
+**Vérification.** `kicad-cli pcb drc` sur `devkit_B_F28P551.kicad_pcb` :
+0 violation, 0 élément non connecté. `kicad-cli sch erc` : 35 violations (10
+erreurs, 25 avertissements), toutes de type déjà rencontré ailleurs dans
+l'atelier (`endpoint_off_grid`, `pin_not_connected`, `power_pin_not_driven`,
+`pin_to_pin`), aucune nouvelle catégorie.
+
+---
+
 ## Points ouverts — ne pas combler par une estimation
 
 Ces valeurs manquent. Elles demandent une lecture de datasheet ou une mesure,
