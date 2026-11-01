@@ -41,18 +41,7 @@ positions sur 56. Les deux devkits sont interchangeables sur le shield.
 Ce n'est pas une coïncidence, c'est le résultat d'un arbitrage : les LED ont été
 délibérément posées sur les **entrées/sorties non communes** aux deux boîtiers,
 pour que toutes les broches qui traversent le connecteur, elles, soient
-communes. Les quatre divergences restent locales à la carte devkit :
-
-| Broche | F280037 | F28P551 |
-|---|---|---|
-| 27 | VDD 1,2 V | LED bleue (GPIO20) |
-| 28 | VDDIO 3,3 V | LED rouge (GPIO21) |
-| 40 | LED rouge (GPIO32) | pastille de test |
-| 46 | LED bleue (GPIO39) | VREGENZ à VSS |
-
-La cause profonde est le régulateur 1,2 V : le F28P551 a le sien en interne,
-activé par VREGENZ à VSS ; le F280037 en 64 PM non-Q n'a pas cette broche et
-demande un LDO supplémentaire.
+communes.
 
 ---
 
