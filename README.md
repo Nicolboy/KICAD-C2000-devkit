@@ -137,7 +137,7 @@ la zone analogique. Même schéma, même brochage, seul le PCB change.
 
 Travail en cours, et le dire plutôt que de le masquer :
 
-- **Devkit B (F28P551)** — **PCB placé et routé** (24 empreintes, DRC à 0
+- **Devkit B (F28P551)** — **PCB routé à 100 %** (24 empreintes, DRC à 0
   violation). Les deux connecteurs 2 × 28 portent désormais une sérigraphie
   par broche — canal ADC réel, GPIO, rôle de bus générique (`I2C_CK`/`DT`,
   `SPI_CK`/`DO`/`DI`/`CS`...) et alimentations, plutôt que les noms
@@ -161,7 +161,7 @@ pas une estimation.
 
 ## Décisions à ne pas défaire
 
-Certains choix ressemblent à des inefficacités sans en être. Les douze sont
+Certains choix ressemblent à des inefficacités sans en être. Les treize sont
 documentés dans [`doc/decisions.md`](doc/decisions.md), chacun avec sa raison et
 ce qui casse si on le défait — entre autres :
 
