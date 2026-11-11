@@ -1,5 +1,15 @@
 # KICAD-C2000-devkit
 
+- **56/56** — connector pins identical between the F280037 and F28P551
+  devkits, fully interchangeable on the same shield
+- **100% generated** — pin spec lives in Markdown, not in KiCad; a script
+  derives the symbols and schematics from it, so GPIO/pin uniqueness and
+  measurement-trace grounding are enforced rules, not just documentation
+- Devkit B PCB **routed 100% on 4 layers**, DRC clean
+
+Carrier boards for a TMS320 C2000 digital power-converter controller,
+supervised by an ESP32-C6 for Wi-Fi and FOTA updates, designed in KiCad 10.
+
 Shield d'isolation et cartes devkit pour TMS320 C2000, conçus sous KiCad 10.
 Le brochage est décrit en Markdown, les symboles et les projets KiCad en sont
 **générés** — le document reste la source de vérité, pas le schéma.
