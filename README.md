@@ -109,13 +109,14 @@ répond « échec du chargement » et rien de plus quand un fichier est malform�
 
 ## Projets KiCad
 
-Trois, pas un de plus.
+Quatre, pas un de plus.
 
 | Projet | Contenu |
 |---|---|
 | `shield.*` | Shield, connecteurs devkit 2 × 28, quatre nappes, ESP32-C6 |
 | `devkit_A_F280037.*` | Devkit TMS320F280037CSPM |
 | `devkit_B_F28P551.*` | Devkit TMS320F28P551SG5PM |
+| `devkit_C_F28P550.*` | Devkit TMS320F28P550SJ9PM (NPU) : copie de devkit_B, seul le MCU change |
 
 ---
 

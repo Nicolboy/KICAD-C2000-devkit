@@ -62,7 +62,7 @@ Un préfixe par groupe, le rôle dans le nom.
 |---|---|
 | Brique commune | `kicad_gen.py` — primitives s-expression, gabarits `.kicad_pcb` / `.kicad_pro`. Ne génère rien seul. |
 | Générateurs | `gen_symbole_mcu.py`, `gen_devkit.py` |
-| Projets KiCad | `shield.*`, `devkit_A_F280037.*`, `devkit_B_F28P551.*` — **trois, pas un de plus** |
+| Projets KiCad | `shield.*`, `devkit_A_F280037.*`, `devkit_B_F28P551.*`, `devkit_C_F28P550.*` — **quatre, pas un de plus** |
 | Sources | `src/` — schémas source des devkits, **versionnés** |
 | Librairies | `lib/` versionné, `build/` généré |
 | Documents | `doc/` — spécification, nappes, décisions, README des librairies |
@@ -75,6 +75,7 @@ Un préfixe par groupe, le rôle dans le nom.
 | `shield.kicad_sch` | **à la main**, c'est le fichier de travail |
 | `devkit_A_F280037.kicad_sch` | **jetable**, écrasé par `gen_devkit.py --force` |
 | `devkit_B_F28P551.kicad_sch` | **jetable**, idem |
+| `devkit_C_F28P550.kicad_sch` | **à la main** : copie de devkit_B (schéma et PCB routé, 2026-11-24) où seul le MCU change (TMS320F28P550SJ9PM, NPU, 2 CLB). Absent de `gen_devkit.py`, ne pas l'y ajouter sans décision. |
 
 Une retouche manuelle sur un devkit est perdue à la régénération suivante, sans
 avertissement. Ce qui doit survivre se modifie dans `src/` ou dans le
@@ -83,7 +84,8 @@ générateur. `gen_shield.py` a été retiré pour cette raison : il écrasait
 
 ## Vérification avant tout commit
 
-Sur les trois projets : `shield`, `devkit_A_F280037`, `devkit_B_F28P551`
+Sur les quatre projets : `shield`, `devkit_A_F280037`, `devkit_B_F28P551`,
+`devkit_C_F28P550`
 (commande dans `KICAD.md`).
 
 ## Décisions de conception et points ouverts
