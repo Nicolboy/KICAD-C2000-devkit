@@ -318,7 +318,7 @@
     (property "Value" "TMS320F28P551SG5PM" (at 0 40.64 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
     (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
-    (property "Description" "C2000 160MHz 512KB NPU LQFP64 PM - brochage devkit" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "C2000 160MHz 576KB LQFP64 PM - brochage devkit" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
     (symbol "TMS320F28P551SG5PM_0_1"
       (rectangle (start -38.1 35.56) (end 38.1 -35.56)
         (stroke (width 0.254) (type default)) (fill (type background))
